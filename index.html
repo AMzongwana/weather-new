@@ -17,25 +17,79 @@
             <input type="search"
             placeholder="Enter a city..."required
             id="search-form-input"
-            class="search-form-input"/>
+            class="search-form-input"
             <input type="submit" value="search" class="search-form-button" />
         </form>
         </header>
         <main>
             <div class="weather-app-data">
                 <div>
-                    <h1 class="weather-app-city">Paris</h1>
+                    <h1 class="weather-app-city"> id="city"></h1>
                     <p class="weather-app-details">
-                        Tuesday 14:49, scattered clouds
+                        <span id="time"></span>,
+                        <span id="description"></span>
                         <br />
-                        Humidity: <strong>66%</strong>, Wind: <strong>3.13km</strong> 
+                        Humidity: <strong id="humidity"></strong>, wind: <strong id="wind-speed"></strong>
                     </p>
                     <div class="weather-app-temperature-container">
-                        <div class="weather-app-icon">🌤</div>
-                        <div class="weather-app-temperature">12</div>
+                        <div id="icon"></div>
+                        <div class="weather-app-temperature" id="temperature"></div>
                         <div class="weather-app-unit">°C</div>
                     </div>
                 </div>
+                <div class="weather-forecast">
+                    <div class="weather-forecast-day">
+                        <div class="weather-forecast-date">Tue</div>
+                        <div class="weather-forecast-icon">🌤</div>
+                        <div class="weather-forecast-temperatures">
+                            <div class="weather-forecast-temperature">
+                                <strong>15°C</strong>
+                            </div>
+                            <div class="weather-forecast-temperature">9°C</div>
+                        </div>
+                    </div>
+                    <div class="weather-forecast-day">
+                        <div class="weather-forecast-date">Wed</div>
+                        <div class="weather-forecast-icon">🌤</div>
+                        <div class="weather-foroecast-temperatures">
+                            <div class="weather-forecast-temperature">
+                                <strong>15°C</strong>
+                        </div>
+                        <div class="weather-forecast-temperature">9°C</div>
+                        </div>
+                    </div>
+                    <div class="weather-forecast-day">
+                        <div class="weather-forecast-date">Wed</div>
+                        <div class="weather-forecast-icon">🌤</div>
+                        <div class="weather-foroecast-temperatures">
+                            <div class="weather-forecast-temperature">
+                                <strong>15°C</strong>
+                        </div>
+                        <div class="weather-forecast-temperature">9°C</div>
+                        </div>
+                    </div>
+                    <div class="weather-forecast-day">
+                        <div class="weather-forecast-date">Wed</div>
+                        <div class="weather-forecast-icon">🌤</div>
+                        <div class="weather-foroecast-temperatures">
+                            <div class="weather-forecast-temperature">
+                                <strong>15°C</strong>
+                        </div>
+                        <div class="weather-forecast-temperature">9°C</div>
+                        </div>
+                    </div>
+                    <div class="weather-forecast-day">
+                        <div class="weather-forecast-date">Wed</div>
+                        <div class="weather-forecast-icon">🌤</div>
+                        <div class="weather-foroecast-temperatures">
+                            <div class="weather-forecast-temperature">
+                                <strong>15°C</strong>
+                        </div>
+                        <div class="weather-forecast-temperature">9°C</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="weather-forecast" id="forecast"></div>
         </main>
 
         <footer>
@@ -44,7 +98,7 @@
             is 
             <a href="https://github.com/AMzongwana/weather-new" target="_blank">open-sourced on GitHub</a>
             and
-            <a href="#" target="_blank">hosted on Netlify</a>
+            <a href="https://famous-youtiao-a07130.netlify.app/" target="_blank">hosted on Netlify</a>
         </footer>
     </div>
 </body>
